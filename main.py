@@ -8,8 +8,8 @@ def main () -> None:
     assert os.path.isdir(path), "THIS IS NOT A FOLDER DEBIL";
     if (path[-1] != "/"):
         path += "/"
-    choice: str = input("boot/force? >> ");
-    assert (choice in ("boot", "force")), "Da blyat, boot or force?";
+    choice: str = input("boot/font/force/blst/clsh? >> ");
+    assert (choice in ("boot, "font", "force", "blst", "clsh")), "Da blyat, boot or force?";
     unit = Renamer();
     unit.renameAllFiles(path, choice);
 
