@@ -9,7 +9,7 @@ def main () -> None:
     if (path[-1] != "/"):
         path += "/"
     choice: str = input("boot/font/force/blst/clsh? >> ");
-    assert (choice in ("boot, "font", "force", "blst", "clsh")), "Da blyat, boot or force?";
+    assert (choice in ("boot", "font", "force", "blst", "clsh")), "Da blyat, boot or font or force or blst or clsh?";
     unit = Renamer();
     unit.renameAllFiles(path, choice);
 
